@@ -1,0 +1,6 @@
+{
+  "name": "Infinity Dashboard Clone",
+  "description": "A pixel-perfect dashboard clone matching the provided design screenshot.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
