@@ -358,7 +358,11 @@ export default function App() {
               
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {globalAccounts.slice(0, 4).map((account, index) => (
-                  <div key={index} className="relative bg-white border border-gray-200 rounded-xl p-5 shadow-[0_1px_2px_rgba(0,0,0,0.02)] flex flex-col justify-between h-[120px] overflow-hidden group hover:border-gray-300 transition-colors cursor-pointer">
+                  <div 
+                    key={index} 
+                    onClick={() => setIsActionDowntimeOpen(true)}
+                    className="relative bg-white border border-gray-200 rounded-xl p-5 shadow-[0_1px_2px_rgba(0,0,0,0.02)] flex flex-col justify-between h-[120px] overflow-hidden group hover:border-gray-300 transition-colors cursor-pointer"
+                  >
                     {/* Active Indicator Line */}
                     {account.active && (
                       <div className="absolute left-0 top-6 bottom-6 w-1 bg-[#0f4347] rounded-r-md"></div>
@@ -507,7 +511,11 @@ export default function App() {
             <h1 className="text-xl sm:text-2xl font-bold text-slate-900 mb-6 lg:mb-8">Global accounts</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {globalAccounts.map((account, index) => (
-                <div key={index} className="relative bg-white border border-gray-200 rounded-xl p-5 shadow-[0_1px_2px_rgba(0,0,0,0.02)] flex flex-col justify-between h-[120px] overflow-hidden group hover:border-gray-300 transition-colors cursor-pointer">
+                <div 
+                  key={index} 
+                  onClick={() => setIsActionDowntimeOpen(true)}
+                  className="relative bg-white border border-gray-200 rounded-xl p-5 shadow-[0_1px_2px_rgba(0,0,0,0.02)] flex flex-col justify-between h-[120px] overflow-hidden group hover:border-gray-300 transition-colors cursor-pointer"
+                >
                   {/* Active Indicator Line */}
                   {account.active && (
                     <div className="absolute left-0 top-6 bottom-6 w-1 bg-[#0f4347] rounded-r-md"></div>
