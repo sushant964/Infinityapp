@@ -322,7 +322,7 @@ export default function App() {
           <div className="p-4 sm:p-6 lg:p-8 max-w-[1200px] w-full mx-auto">
             {/* Header & Actions */}
             <div className="flex flex-col gap-5 lg:gap-6 mb-8 lg:mb-10">
-              <h1 className="text-xl sm:text-2xl font-bold text-slate-900">Welcome, InfinityApp</h1>
+              <h1 className="text-xl sm:text-2xl font-bold text-slate-900">Welcome, Deeshan</h1>
               <div className="flex flex-wrap items-center gap-2.5 sm:gap-3">
                 <button 
                   onClick={() => setIsActionDowntimeOpen(true)}
