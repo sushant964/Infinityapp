@@ -53,7 +53,7 @@ export default function App() {
   ];
 
   const globalAccounts = [
-    { flag: '🇺🇸', amount: '597.50', currency: 'US Dollar', active: true },
+    { flag: '🇺🇸', amount: '895.50', currency: 'US Dollar', active: true },
     { flag: '🇨🇦', amount: '0.00', currency: 'Canadian Dollar', active: false },
     { flag: '🇬🇧', amount: '0.00', currency: 'Pound Sterling', active: false },
     { flag: '🇪🇺', amount: '0.00', currency: 'Euro', active: false },
@@ -66,12 +66,15 @@ export default function App() {
   ];
 
   const transactions = [
-    { id: 'TX-2948', time: '14:23', date: 'Aug 4', clientInitials: 'MB', clientBg: 'bg-blue-100', clientColor: 'text-blue-700', clientName: 'Mason Brooks', status: 'Success', statusColor: 'text-emerald-700 bg-emerald-50', dotColor: 'bg-emerald-500', desc: 'Invoice Approved', amount: 'USD 99.50', method: 'Bank Transfer' },
-    { id: 'TX-2949', time: '09:41', date: 'Aug 4', clientInitials: 'LP', clientBg: 'bg-purple-100', clientColor: 'text-purple-700', clientName: 'Logan Prescott', status: 'Success', statusColor: 'text-emerald-700 bg-emerald-50', dotColor: 'bg-emerald-500', desc: 'Invoice Approved', amount: 'USD 99.50', method: 'Credit Card' },
-    { id: 'TX-2950', time: '11:15', date: 'Aug 7', clientInitials: 'EH', clientBg: 'bg-[#fce7f3]', clientColor: 'text-pink-700', clientName: 'Everett Hayes', status: 'Success', statusColor: 'text-emerald-700 bg-emerald-50', dotColor: 'bg-emerald-500', desc: 'Invoice Approved', amount: 'USD 99.50', method: 'Wire Transfer' },
-    { id: 'TX-2951', time: '16:05', date: 'Aug 12', clientInitials: 'WC', clientBg: 'bg-orange-100', clientColor: 'text-orange-700', clientName: 'Wyatt Callahan', status: 'Success', statusColor: 'text-emerald-700 bg-emerald-50', dotColor: 'bg-emerald-500', desc: 'Invoice Approved', amount: 'USD 99.50', method: 'Bank Transfer' },
-    { id: 'TX-2952', time: '08:30', date: 'Aug 19', clientInitials: 'HR', clientBg: 'bg-indigo-100', clientColor: 'text-indigo-700', clientName: 'Hudson Reed', status: 'Success', statusColor: 'text-emerald-700 bg-emerald-50', dotColor: 'bg-emerald-500', desc: 'Invoice Approved', amount: 'USD 99.50', method: 'Credit Card' },
     { id: 'TX-2953', time: '13:45', date: 'Aug 23', clientInitials: 'NM', clientBg: 'bg-teal-100', clientColor: 'text-teal-700', clientName: 'Nolan Mercer', status: 'Success', statusColor: 'text-emerald-700 bg-emerald-50', dotColor: 'bg-emerald-500', desc: 'Invoice Approved', amount: 'USD 99.50', method: 'Bank Transfer' },
+    { id: 'TX-2952', time: '08:30', date: 'Sep 2', clientInitials: 'HR', clientBg: 'bg-indigo-100', clientColor: 'text-indigo-700', clientName: 'Hudson Reed', status: 'Success', statusColor: 'text-emerald-700 bg-emerald-50', dotColor: 'bg-emerald-500', desc: 'Invoice Approved', amount: 'USD 99.50', method: 'Credit Card' },
+    { id: 'TX-2951', time: '16:05', date: 'Sep 5', clientInitials: 'WC', clientBg: 'bg-orange-100', clientColor: 'text-orange-700', clientName: 'Wyatt Callahan', status: 'Success', statusColor: 'text-emerald-700 bg-emerald-50', dotColor: 'bg-emerald-500', desc: 'Invoice Approved', amount: 'USD 99.50', method: 'Bank Transfer' },
+    { id: 'TX-2950', time: '11:15', date: 'Sep 18', clientInitials: 'EH', clientBg: 'bg-[#fce7f3]', clientColor: 'text-pink-700', clientName: 'Everett Hayes', status: 'Success', statusColor: 'text-emerald-700 bg-emerald-50', dotColor: 'bg-emerald-500', desc: 'Invoice Approved', amount: 'USD 99.50', method: 'Wire Transfer' },
+    { id: 'TX-2948', time: '14:23', date: 'Sep 24', clientInitials: 'MB', clientBg: 'bg-blue-100', clientColor: 'text-blue-700', clientName: 'Mason Brooks', status: 'Success', statusColor: 'text-emerald-700 bg-emerald-50', dotColor: 'bg-emerald-500', desc: 'Invoice Approved', amount: 'USD 99.50', method: 'Bank Transfer' },
+    { id: 'TX-2949', time: '09:41', date: 'Oct 3', clientInitials: 'LP', clientBg: 'bg-purple-100', clientColor: 'text-purple-700', clientName: 'Logan Prescott', status: 'Success', statusColor: 'text-emerald-700 bg-emerald-50', dotColor: 'bg-emerald-500', desc: 'Invoice Approved', amount: 'USD 99.50', method: 'Credit Card' },
+    { id: 'TX-2954', time: '15:10', date: 'Oct 8', clientInitials: 'HC', clientBg: 'bg-amber-100', clientColor: 'text-amber-700', clientName: 'Hayes Calloway', status: 'Success', statusColor: 'text-emerald-700 bg-emerald-50', dotColor: 'bg-emerald-500', desc: 'Invoice Approved', amount: 'USD 99.50', method: 'Bank Transfer' },
+    { id: 'TX-2955', time: '10:25', date: 'Oct 10', clientInitials: 'KJ', clientBg: 'bg-cyan-100', clientColor: 'text-cyan-700', clientName: 'Kairo Jameson', status: 'Success', statusColor: 'text-emerald-700 bg-emerald-50', dotColor: 'bg-emerald-500', desc: 'Invoice Approved', amount: 'USD 99.50', method: 'Credit Card' },
+    { id: 'TX-2956', time: '17:40', date: 'Oct 14', clientInitials: 'BR', clientBg: 'bg-rose-100', clientColor: 'text-rose-700', clientName: 'Brecken', status: 'Success', statusColor: 'text-emerald-700 bg-emerald-50', dotColor: 'bg-emerald-500', desc: 'Invoice Approved', amount: 'USD 99.50', method: 'Bank Transfer' },
   ];
 
   const connectPlatforms = [
@@ -642,7 +645,7 @@ export default function App() {
               
               {/* Pagination */}
               <div className="flex items-center justify-between px-4 sm:px-6 py-4 border-t border-gray-100 bg-white">
-                <span className="text-[13px] text-slate-500">Showing <span className="font-medium text-slate-900">1</span> to <span className="font-medium text-slate-900">6</span> of <span className="font-medium text-slate-900">6</span> results</span>
+                <span className="text-[13px] text-slate-500">Showing <span className="font-medium text-slate-900">1</span> to <span className="font-medium text-slate-900">{transactions.length}</span> of <span className="font-medium text-slate-900">{transactions.length}</span> results</span>
                 <div className="flex items-center gap-2">
                   <button className="px-3 py-1.5 border border-gray-200 rounded-md text-[13px] font-medium text-slate-400 cursor-not-allowed">
                     Previous
