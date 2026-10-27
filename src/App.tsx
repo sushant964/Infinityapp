@@ -53,7 +53,7 @@ export default function App() {
   ];
 
   const globalAccounts = [
-    { flag: '🇺🇸', amount: '895.50', currency: 'US Dollar', active: true },
+    { flag: '🇺🇸', amount: '650.50', currency: 'US Dollar', active: true },
     { flag: '🇨🇦', amount: '0.00', currency: 'Canadian Dollar', active: false },
     { flag: '🇬🇧', amount: '0.00', currency: 'Pound Sterling', active: false },
     { flag: '🇪🇺', amount: '0.00', currency: 'Euro', active: false },
@@ -73,8 +73,6 @@ export default function App() {
     { id: 'TX-2948', time: '14:23', date: 'Sep 24', clientInitials: 'MB', clientBg: 'bg-blue-100', clientColor: 'text-blue-700', clientName: 'Mason Brooks', status: 'Success', statusColor: 'text-emerald-700 bg-emerald-50', dotColor: 'bg-emerald-500', desc: 'Invoice Approved', amount: 'USD 99.50', method: 'Bank Transfer' },
     { id: 'TX-2949', time: '09:41', date: 'Oct 3', clientInitials: 'LP', clientBg: 'bg-purple-100', clientColor: 'text-purple-700', clientName: 'Logan Prescott', status: 'Success', statusColor: 'text-emerald-700 bg-emerald-50', dotColor: 'bg-emerald-500', desc: 'Invoice Approved', amount: 'USD 99.50', method: 'Credit Card' },
     { id: 'TX-2954', time: '15:10', date: 'Oct 8', clientInitials: 'HC', clientBg: 'bg-amber-100', clientColor: 'text-amber-700', clientName: 'Hayes Calloway', status: 'Success', statusColor: 'text-emerald-700 bg-emerald-50', dotColor: 'bg-emerald-500', desc: 'Invoice Approved', amount: 'USD 99.50', method: 'Bank Transfer' },
-    { id: 'TX-2955', time: '10:25', date: 'Oct 10', clientInitials: 'KJ', clientBg: 'bg-cyan-100', clientColor: 'text-cyan-700', clientName: 'Kairo Jameson', status: 'Success', statusColor: 'text-emerald-700 bg-emerald-50', dotColor: 'bg-emerald-500', desc: 'Invoice Approved', amount: 'USD 99.50', method: 'Credit Card' },
-    { id: 'TX-2956', time: '17:40', date: 'Oct 14', clientInitials: 'BR', clientBg: 'bg-rose-100', clientColor: 'text-rose-700', clientName: 'Brecken', status: 'Success', statusColor: 'text-emerald-700 bg-emerald-50', dotColor: 'bg-emerald-500', desc: 'Invoice Approved', amount: 'USD 99.50', method: 'Bank Transfer' },
   ];
 
   const connectPlatforms = [
@@ -450,16 +448,7 @@ export default function App() {
                             {tx.desc}
                           </td>
                           <td className="py-3 sm:py-4 px-4 sm:px-5 text-right whitespace-nowrap">
-                            <div className="flex flex-col items-end justify-center h-full">
-                              {tx.amountSub ? (
-                                <>
-                                  <span className="text-[14px] font-bold text-slate-900 leading-tight">{tx.amount}</span>
-                                  <span className="text-[13px] text-slate-500 font-medium mt-0.5">{tx.amountSub}</span>
-                                </>
-                              ) : (
-                                <span className="text-[14px] font-bold text-slate-900">{tx.amount}</span>
-                              )}
-                            </div>
+                            <span className="text-[14px] font-bold text-slate-900">{tx.amount}</span>
                           </td>
                         </tr>
                       ))}
